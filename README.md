@@ -85,5 +85,5 @@ Contributions of any kind welcome! See the [contributing guide](contributing.md)
 
 # License
 
-* `asdf-skopeo` - [LICENSE](LICENSE) © [Zachariah Dzielinski](https://github.com/zdzielinski/)
 * `skopeo` - [LICENSE](https://github.com/containers/skopeo/blob/main/LICENSE) © [skopeo](https://github.com/containers/skopeo)
+* `asdf-skopeo` - [LICENSE](LICENSE) © [Zachariah Dzielinski](https://github.com/zdzielinski/)
