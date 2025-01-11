@@ -20,6 +20,31 @@
 - `bash`, `curl`, `tar`, and [POSIX utilities](https://pubs.opengroup.org/onlinepubs/9699919799/idx/utilities.html).
 - `SOME_ENV_VAR`: set this environment variable in your shell config to load the correct version of tool x.
 
+```bash
+# Fedora:
+sudo dnf install gpgme-devel libassuan-devel btrfs-progs-devel
+```
+
+```bash
+# Ubuntu (`libbtrfs-dev` requires Ubuntu 18.10 and above):
+sudo apt install libgpgme-dev libassuan-dev libbtrfs-dev pkg-config
+```
+
+```bash
+# macOS:
+brew install gpgme
+```
+
+```bash
+# openSUSE:
+sudo zypper install libgpgme-devel libbtrfs-devel glib2-devel
+```
+
+```bash
+# Arch Linux:
+sudo pacman -S base-devel gpgme btrfs-progs
+```
+
 # Install
 
 Plugin:

@@ -2,8 +2,7 @@
 
 set -euo pipefail
 
-# TODO: Ensure this is the correct GitHub homepage where releases can be downloaded for skopeo.
-GH_REPO="https://github.com/zdzielinski/skopeo"
+GH_REPO="https://github.com/containers/skopeo"
 TOOL_NAME="skopeo"
 TOOL_TEST="skopeo --version"
 
@@ -31,8 +30,6 @@ list_github_tags() {
 }
 
 list_all_versions() {
-	# TODO: Adapt this. By default we simply list the tag names from GitHub releases.
-	# Change this function if skopeo has other means of determining installable versions.
 	list_github_tags
 }
 
@@ -41,7 +38,6 @@ download_release() {
 	version="$1"
 	filename="$2"
 
-	# TODO: Adapt the release URL convention for skopeo
 	url="$GH_REPO/archive/v${version}.tar.gz"
 
 	echo "* Downloading $TOOL_NAME release $version..."
@@ -60,6 +56,9 @@ install_version() {
 	(
 		mkdir -p "$install_path"
 		cp -r "$ASDF_DOWNLOAD_PATH"/* "$install_path"
+
+		echo "BREAK POINT 1"
+		exit 0
 
 		# TODO: Assert skopeo executable exists.
 		local tool_cmd
