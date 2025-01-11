@@ -17,7 +17,7 @@
 
 ## General
 
-- `go`, `bash`, `curl`, `tar`, `make`, and [POSIX utilities](https://pubs.opengroup.org/onlinepubs/9699919799/idx/utilities.html).
+- `go`, `bash`, `curl`, `tar`, and [POSIX utilities](https://pubs.opengroup.org/onlinepubs/9699919799/idx/utilities.html).
 
 ## Skopeo Specific
 
