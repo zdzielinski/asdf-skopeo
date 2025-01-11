@@ -55,10 +55,13 @@ install_version() {
 
 	(
 		mkdir -p "$install_path"
-		cp -r "$ASDF_DOWNLOAD_PATH"/* "$install_path"
 
-		echo "BREAK POINT 1"
-		exit 0
+		cd "$ASDF_DOWNLOAD_PATH"
+		make bin/skopeo
+		cp bin/skopeo $install_path
+		cd -
+
+		# cp -r "$ASDF_DOWNLOAD_PATH"/* "$install_path"
 
 		# TODO: Assert skopeo executable exists.
 		local tool_cmd
