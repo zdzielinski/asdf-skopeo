@@ -20,9 +20,9 @@ jobs:
         with:
           go-version: '>=1.22.0'
       - name: os_specific_installs
-        run:   |
+        run: |
           if [ "$RUNNER_OS" == "Linux" ]; then
-            apt -y install libgpgme-dev libassuan-dev libbtrfs-dev pkg-config
+            sudo apt -y install libgpgme-dev libassuan-dev libbtrfs-dev pkg-config
           elif [ "$RUNNER_OS" == "macOS" ]; then
             brew install gpgme
           fi
