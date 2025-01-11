@@ -56,7 +56,6 @@ install_version() {
 	(
 		mkdir -p "$install_path"
 		make -C "$ASDF_DOWNLOAD_PATH" "bin/skopeo"
-		chmod +x "$ASDF_DOWNLOAD_PATH/bin/skopeo"
 		cp "$ASDF_DOWNLOAD_PATH/bin/skopeo" "$install_path"
 
 		local tool_cmd
