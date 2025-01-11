@@ -55,12 +55,7 @@ install_version() {
 
 	(
 		mkdir -p "$install_path"
-
-		cd "$ASDF_DOWNLOAD_PATH"
-		make bin/skopeo
-		cp bin/skopeo $install_path
-		cd -
-
+		make -C "$ASDF_DOWNLOAD_PATH" "$install_path/skopeo"
 		# cp -r "$ASDF_DOWNLOAD_PATH"/* "$install_path"
 
 		# TODO: Assert skopeo executable exists.
