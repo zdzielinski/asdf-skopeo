@@ -2,7 +2,7 @@
 
 # asdf-skopeo [![Build](https://github.com/zdzielinski/asdf-skopeo/actions/workflows/build.yml/badge.svg)](https://github.com/zdzielinski/asdf-skopeo/actions/workflows/build.yml) [![Lint](https://github.com/zdzielinski/asdf-skopeo/actions/workflows/lint.yml/badge.svg)](https://github.com/zdzielinski/asdf-skopeo/actions/workflows/lint.yml)
 
-[skopeo](https://github.com/zdzielinski/skopeo) plugin for the [asdf version manager](https://asdf-vm.com).
+[skopeo](https://github.com/containers/skopeo) plugin for the [asdf version manager](https://asdf-vm.com).
 
 </div>
 
