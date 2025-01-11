@@ -55,10 +55,9 @@ install_version() {
 
 	(
 		mkdir -p "$install_path"
-		make -C "$ASDF_DOWNLOAD_PATH" "$install_path/skopeo"
-		# cp -r "$ASDF_DOWNLOAD_PATH"/* "$install_path"
+		make -C "$ASDF_DOWNLOAD_PATH" "bin/skopeo"
+		cp "$ASDF_DOWNLOAD_PATH/bin/skopeo" "$install_path"
 
-		# TODO: Assert skopeo executable exists.
 		local tool_cmd
 		tool_cmd="$(echo "$TOOL_TEST" | cut -d' ' -f1)"
 		test -x "$install_path/$tool_cmd" || fail "Expected $install_path/$tool_cmd to be executable."
